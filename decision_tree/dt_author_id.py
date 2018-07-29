@@ -35,9 +35,9 @@ numFeatures = len(features_train[0])
 
 # When percentile was 10 in selector = SelectPercentile(f_classif, percentile=10)
 # there was a total of 3785 features.
-# After changing the percentile to 1, the number of features reduced to only 379
+# After changing the percentile to 1, the number of features reduced to 379
 # More features = more complex decision tree
-# The accuracy was 0.967 when only having 1% of the total available features
+# The accuracy was 0.967 when only having 1% of the total available features (4 total features)
 # The accuracy was 0.977 when only having 10% of the total available features 
 
 print accuracy_score(pred, labels_test)
